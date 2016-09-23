@@ -1,3 +1,7 @@
+docker-setup
+----------------------
+
+https://gist.github.com/prayagupd/69bbecb33af8abed1583
 
 
 ```
@@ -23,3 +27,20 @@ ubuntu              latest              45bc58500fa3        4 days ago          
 ```
 docker run -p 5000:5000 suply_chain:dockerfile python clothing.py
 ```
+
+```
+docker ps -a
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                     PORTS               NAMES
+7df5a4533237        supply_chain:dockerfile   "/bin/bash"         7 minutes ago       Exited (0) 7 minutes ago                       fervent_shirley
+```
+
+```
+docker ps -a -f status=running
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+```
+
+issue
+------------
+
+`docker run -p 5000:5000 suply_chain:dockerfile` is not working.
